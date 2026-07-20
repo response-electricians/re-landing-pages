@@ -1,0 +1,21 @@
+{
+  "name": "Response Electricians Perth | Electrical Services",
+  "short_name": "Response Electricians",
+  "description": "Award-winning electrician Perth. Residential, commercial, and emergency electrical services across Perth, WA. Australia's Electrician of the Year 2017 & 2024.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#00A4E4",
+  "icons": [
+    {
+      "src": "/images/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

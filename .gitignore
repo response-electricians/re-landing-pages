@@ -1,0 +1,11 @@
+# .gitignore for re-landing-pages
+# NOTE: images ARE kept in this repo (site references them) — do not add image excludes.
+.DS_Store
+Thumbs.db
+.fuse_hidden*
+node_modules/
+*.bak
+*.new
+*.old
+*~
+*.zip
