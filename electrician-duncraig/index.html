@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-AU">
 <head>
+  <!-- Google tag (gtag.js) - GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TWGMNH75GQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TWGMNH75GQ');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -32,7 +40,7 @@
   <!-- Preconnect (font + tracking only — reduced DNS lookups) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://aweuhnwl.au.stape.io">
+  <link rel="preconnect" href="https://sgtm.responseelectricianperth.com.au">
 
   <!-- Google Fonts — loaded via link instead of CSS @import (eliminates render-blocking chain) -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500..900&display=swap">
@@ -52,9 +60,24 @@
   <link rel="stylesheet" href="/css/main-v57.css">
   <link rel="stylesheet" href="/css/header-footer-v57.css">
 
-  <!-- Stape Custom Loader (Server-Side GTM) — must be early for dataLayer -->
+  <!-- Google Tag Manager (Stape Custom Loader — sGTM) -->
+  <script>!function(){"use strict";function l(e){for(var t=e,r=0,n=document.cookie.split(";");r<n.length;r++){var o=n[r].split("=");if(o[0].trim()===t)return o[1]}}function s(e){return localStorage.getItem(e)}function u(e){return window[e]}function A(e,t){e=document.querySelector(e);return t?null==e?void 0:e.getAttribute(t):null==e?void 0:e.textContent}var e=window,t=document,r="script",n="dataLayer",o="https://sgtm.responseelectricianperth.com.au",a="",i="1raweuhnwl",c="ea24ur8y=BRNTLyEoWjZbTiMmIihRF1FFQFlTARlcHhIdGBoLBAQJGwsLARceAgUWABgQFwMJQhQBBVsEAg%3D%3D",g="cookie",v="_stape_uid",E="",d=!1;try{var d=!!g&&(m=navigator.userAgent,!!(m=new RegExp("Version/([0-9._]+)(.*Mobile)?.*Safari.*").exec(m)))&&16.4<=parseFloat(m[1]),f="stapeUserId"===g,I=d&&!f?function(e,t,r){void 0===t&&(t="");var n={cookie:l,localStorage:s,jsVariable:u,cssSelector:A},t=Array.isArray(t)?t:[t];if(e&&n[e])for(var o=n[e],a=0,i=t;a<i.length;a++){var c=i[a],c=r?o(c,r):o(c);if(c)return c}else console.warn("invalid uid source",e)}(g,v,E):void 0;d=d&&(!!I||f)}catch(e){console.error(e)}var m=e,g=(m[n]=m[n]||[],m[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"}),t.getElementsByTagName(r)[0]),v=I?"&bi="+encodeURIComponent(I):"",E=t.createElement(r),f=(d&&(i=8<i.length?i.replace(/([a-z]{8}$)/,"kp$1"):"kp"+i),!d&&a?a:o);E.async=!0,E.src=f+"/"+i+".js?"+c+v,null!=(e=g.parentNode)&&e.insertBefore(E,g)}();</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google Ads: gtag init + phone call tracking -->
   <script>
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src='https://aweuhnwl.au.stape.io/1raweuhnwl.js';f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-1021126844');
+  /* Primary: 60s qualified call, A$150 — mobile */
+  gtag('config', 'AW-1021126844/6DiCCOHe65wcELzR9OYD', {'phone_conversion_number': '0483 967 122'});
+  /* Secondary: 5s call attempt, A$1 — mobile */
+  gtag('config', 'AW-1021126844/gEjQCMyr_5wcELzR9OYD', {'phone_conversion_number': '0483 967 122'});
+  /* Primary: 60s qualified call, A$150 — landline */
+  gtag('config', 'AW-1021126844/6DiCCOHe65wcELzR9OYD', {'phone_conversion_number': '(08) 9106 9197'});
+  /* Secondary: 5s call attempt, A$1 — landline */
+  gtag('config', 'AW-1021126844/gEjQCMyr_5wcELzR9OYD', {'phone_conversion_number': '(08) 9106 9197'});
   </script>
 
   <!-- Bing UET, Clarity, HubSpot — deferred until after page paint to reduce blocking -->
@@ -396,9 +419,19 @@
         </div>
       </div>
 
-      <a href="/about/">About</a>
+      <div class="nav-dropdown">
+        <a href="/about/" class="nav-dropdown-trigger">
+          About
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <div class="nav-dropdown-menu">
+          <a href="/about/">About Us</a>
+          <a href="/meet-the-team/">Meet the Team</a>
+        </div>
+      </div>
       <a href="/reviews/">Reviews</a>
       <a href="/join-the-team/">Join Our Team</a>
+      <a href="/blog/">Blog</a>
       <a href="/contact/">Contact</a>
     </nav>
 
@@ -481,9 +514,17 @@
     <a href="/areas-we-service/">View All Areas</a>
   </div>
 
-  <a href="/about/">About Us</a>
+  <button class="mobile-dropdown-toggle">
+    About
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+  <div class="mobile-dropdown-items">
+    <a href="/about/">About Us</a>
+    <a href="/meet-the-team/">Meet the Team</a>
+  </div>
   <a href="/reviews/">Reviews</a>
   <a href="/join-the-team/">Join Our Team</a>
+  <a href="/blog/">Blog</a>
   <a href="/contact/">Contact</a>
 
   <div class="mobile-nav-divider"></div>
@@ -807,6 +848,17 @@
  <blockquote>"Our 1980s home had an old fused switchboard. They upgraded it properly, added new circuits, and everything now runs smoothly. Professional and fair."</blockquote>
  <cite>Graham Walker, Duncraig</cite>
  </div>
+ <div class="testi-card">
+ <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+ <blockquote>"Saturday night, no power to half the house. Called Response and they answered straight away — had someone out within the hour. Diagnosed a faulty safety switch, fixed it properly, and explained what caused it. Genuine emergency service."</blockquote>
+ <cite>Fiona W., Duncraig</cite>
+ </div>
+ <div class="testi-card">
+ <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+ <blockquote>"Had them install extra power points and upgrade our switchboard before a renovation. Clear price upfront, no surprises on the day. The team was tidy and respectful of the house. Would use them again without hesitation."</blockquote>
+ <cite>Peter & Karen S., Duncraig</cite>
+ </div>
+ </div>
  </div>
  </div>
 </section>
@@ -834,56 +886,39 @@
  <div class="faq-list">
  <div class="faq-item">
  <button class="faq-q">How does pricing work? Do I need to pay for a quote?</button>
- <div class="faq-a" style="display:none;">
- <p>Give us a call and we'll talk through exactly what you need. We'll give you a clear idea of what's involved, then book you in at a time that suits. When our electrician arrives, they walk through the job with you and confirm everything before any work begins. You'll have complete certainty the whole way through.</p>
+ <div class="faq-a">
+ <div class="faq-a-inner">Give us a call and we'll talk through exactly what you need. We'll give you a clear idea of what's involved, then book you in at a time that suits. When our electrician arrives, they walk through the job with you and confirm everything before any work begins. You'll have complete certainty the whole way through.</div>
+</div>
  </div>
- </div>
- </div>
- </div>
-
  <div class="faq-item">
  <button class="faq-q">How quickly can you get to Duncraig?</button>
- <div class="faq-a" style="display:none;">
- <p>We're in and around Duncraig regularly. For emergencies, we aim to be there within the hour. For scheduled work, we typically book within a few days depending on availability. Call 0483 967 122 and we'll let you know what's available this week.</p>
+ <div class="faq-a">
+ <div class="faq-a-inner">We're in and around Duncraig regularly. For emergencies, we aim to be there within the hour. For scheduled work, we typically book within a few days depending on availability. Call 0483 967 122 and we'll let you know what's available this week.</div>
+</div>
  </div>
- </div>
- </div>
- </div>
-
  <div class="faq-item">
  <button class="faq-q">Do you charge extra for Duncraig or surrounding suburbs?</button>
- <div class="faq-a" style="display:none;">
- <p>Not a cent. Same pricing whether you're in Duncraig, Warwick, Carine, or Greenwood. No postcode premiums, no call-out fees. The price we give you is the price you pay.</p>
+ <div class="faq-a">
+ <div class="faq-a-inner">Not a cent. Same pricing whether you're in Duncraig, Warwick, Carine, or Greenwood. No postcode premiums, no call-out fees. The price we give you is the price you pay.</div>
+</div>
  </div>
- </div>
- </div>
- </div>
-
  <div class="faq-item">
  <button class="faq-q">What if I need someone after hours or on the weekend?</button>
- <div class="faq-a" style="display:none;">
- <p>We run a 24/7 emergency line. Power out, burning smell, safety hazard. Call 0483 967 122 any time and a real person will answer. Non-urgent work is scheduled during business hours.</p>
+ <div class="faq-a">
+ <div class="faq-a-inner">We run a 24/7 emergency line. Power out, burning smell, safety hazard. Call 0483 967 122 any time and a real person will answer. Non-urgent work is scheduled during business hours.</div>
+</div>
  </div>
- </div>
- </div>
- </div>
-
  <div class="faq-item">
  <button class="faq-q">Are you actually any good? How do I know?</button>
- <div class="faq-a" style="display:none;">
- <p>We were named Australia's Electrician of the Year in both 2017 and 2024, and WA Service Business of the Year four years running. We've got 1,900+ five-star reviews from real Perth families. Every job is backed by a lifetime workmanship warranty. We're not the cheapest, but we're the ones you'll actually be glad you called.</p>
+ <div class="faq-a">
+ <div class="faq-a-inner">We were named Australia's Electrician of the Year in both 2017 and 2024, and WA Service Business of the Year four years running. We've got 1,900+ five-star reviews from real Perth families. Every job is backed by a lifetime workmanship warranty. We're not the cheapest, but we're the ones you'll actually be glad you called.</div>
+</div>
  </div>
- </div>
- </div>
- </div>
-
  <div class="faq-item">
  <button class="faq-q">What electrical services do you cover in Duncraig?</button>
- <div class="faq-a" style="display:none;">
- <p>Everything. Switchboard upgrades, full rewiring, new circuits, safety compliance, lighting upgrades, fault finding, and 24/7 emergency repairs. If it involves wiring, we do it. Licensed EC009022.</p>
- </div>
- </div>
- </div>
+ <div class="faq-a">
+ <div class="faq-a-inner">Everything. Switchboard upgrades, full rewiring, new circuits, safety compliance, lighting upgrades, fault finding, and 24/7 emergency repairs. If it involves wiring, we do it. Licensed EC009022.</div>
+</div>
  </div>
  </div>
  </div>
@@ -1043,8 +1078,9 @@
 
 <script src="/js/main-v57.js"></script>
 
-<!-- Stape GTM noscript fallback -->
-<noscript><iframe src="https://aweuhnwl.au.stape.io/ns.html" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://sgtm.responseelectricianperth.com.au/ns.html?id=GTM-W79MNWM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 </body>
 </html>

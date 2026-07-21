@@ -1,4 +1,51 @@
+# Robots.txt - Response Electricians
+# Last updated: 29 May 2026
+
 User-agent: *
 Allow: /
 
-Sitemap: https://www.responseelectricianperth.com.au/sitemap.xml
+# AI search retrieval - ALLOW (these drive AI citations and clicks)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# AI training crawlers - BLOCK (no citation upside, bandwidth tax only)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+Sitemap: https://www.responseelectricianperth.com.au/sitemap-index.xml

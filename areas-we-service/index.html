@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-AU">
 <head>
+  <!-- Google tag (gtag.js) - GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TWGMNH75GQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TWGMNH75GQ');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -32,7 +40,7 @@
   <!-- Preconnect (font + tracking only — reduced DNS lookups) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://aweuhnwl.au.stape.io">
+  <link rel="preconnect" href="https://sgtm.responseelectricianperth.com.au">
 
   <!-- Google Fonts — loaded via link instead of CSS @import (eliminates render-blocking chain) -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500..900&display=swap">
@@ -52,9 +60,24 @@
   <link rel="stylesheet" href="/css/main-v57.css">
   <link rel="stylesheet" href="/css/header-footer-v57.css">
 
-  <!-- Stape Custom Loader (Server-Side GTM) — must be early for dataLayer -->
+  <!-- Google Tag Manager (Stape Custom Loader — sGTM) -->
+  <script>!function(){"use strict";function l(e){for(var t=e,r=0,n=document.cookie.split(";");r<n.length;r++){var o=n[r].split("=");if(o[0].trim()===t)return o[1]}}function s(e){return localStorage.getItem(e)}function u(e){return window[e]}function A(e,t){e=document.querySelector(e);return t?null==e?void 0:e.getAttribute(t):null==e?void 0:e.textContent}var e=window,t=document,r="script",n="dataLayer",o="https://sgtm.responseelectricianperth.com.au",a="",i="1raweuhnwl",c="ea24ur8y=BRNTLyEoWjZbTiMmIihRF1FFQFlTARlcHhIdGBoLBAQJGwsLARceAgUWABgQFwMJQhQBBVsEAg%3D%3D",g="cookie",v="_stape_uid",E="",d=!1;try{var d=!!g&&(m=navigator.userAgent,!!(m=new RegExp("Version/([0-9._]+)(.*Mobile)?.*Safari.*").exec(m)))&&16.4<=parseFloat(m[1]),f="stapeUserId"===g,I=d&&!f?function(e,t,r){void 0===t&&(t="");var n={cookie:l,localStorage:s,jsVariable:u,cssSelector:A},t=Array.isArray(t)?t:[t];if(e&&n[e])for(var o=n[e],a=0,i=t;a<i.length;a++){var c=i[a],c=r?o(c,r):o(c);if(c)return c}else console.warn("invalid uid source",e)}(g,v,E):void 0;d=d&&(!!I||f)}catch(e){console.error(e)}var m=e,g=(m[n]=m[n]||[],m[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"}),t.getElementsByTagName(r)[0]),v=I?"&bi="+encodeURIComponent(I):"",E=t.createElement(r),f=(d&&(i=8<i.length?i.replace(/([a-z]{8}$)/,"kp$1"):"kp"+i),!d&&a?a:o);E.async=!0,E.src=f+"/"+i+".js?"+c+v,null!=(e=g.parentNode)&&e.insertBefore(E,g)}();</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google Ads: gtag init + phone call tracking -->
   <script>
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src='https://aweuhnwl.au.stape.io/1raweuhnwl.js';f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-1021126844');
+  /* Primary: 60s qualified call, A$150 — mobile */
+  gtag('config', 'AW-1021126844/6DiCCOHe65wcELzR9OYD', {'phone_conversion_number': '0483 967 122'});
+  /* Secondary: 5s call attempt, A$1 — mobile */
+  gtag('config', 'AW-1021126844/gEjQCMyr_5wcELzR9OYD', {'phone_conversion_number': '0483 967 122'});
+  /* Primary: 60s qualified call, A$150 — landline */
+  gtag('config', 'AW-1021126844/6DiCCOHe65wcELzR9OYD', {'phone_conversion_number': '(08) 9106 9197'});
+  /* Secondary: 5s call attempt, A$1 — landline */
+  gtag('config', 'AW-1021126844/gEjQCMyr_5wcELzR9OYD', {'phone_conversion_number': '(08) 9106 9197'});
   </script>
 
   <!-- Bing UET, Clarity, HubSpot — deferred until after page paint to reduce blocking -->
@@ -224,9 +247,19 @@
         </div>
       </div>
 
-      <a href="/about/">About</a>
+      <div class="nav-dropdown">
+        <a href="/about/" class="nav-dropdown-trigger">
+          About
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <div class="nav-dropdown-menu">
+          <a href="/about/">About Us</a>
+          <a href="/meet-the-team/">Meet the Team</a>
+        </div>
+      </div>
       <a href="/reviews/">Reviews</a>
       <a href="/join-the-team/">Join Our Team</a>
+      <a href="/blog/">Blog</a>
       <a href="/contact/">Contact</a>
     </nav>
 
@@ -309,9 +342,17 @@
     <a href="/areas-we-service/">View All Areas</a>
   </div>
 
-  <a href="/about/">About Us</a>
+  <button class="mobile-dropdown-toggle">
+    About
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+  <div class="mobile-dropdown-items">
+    <a href="/about/">About Us</a>
+    <a href="/meet-the-team/">Meet the Team</a>
+  </div>
   <a href="/reviews/">Reviews</a>
   <a href="/join-the-team/">Join Our Team</a>
+  <a href="/blog/">Blog</a>
   <a href="/contact/">Contact</a>
 
   <div class="mobile-nav-divider"></div>
@@ -470,7 +511,7 @@
  <!-- North of Perth -->
  <div class="region-card">
  <h3 class="region-heading">North of Perth</h3>
- <div class="region-meta"><span class="suburb-count" data-count="52">52 suburbs</span></div>
+ <div class="region-meta"><span class="suburb-count" data-count="65">65 suburbs</span></div>
  <div class="suburb-grid">
  <a href="/electrician-alexander-heights/" class="suburb-link">Alexander Heights</a>
  <a href="/electrician-aveley/" class="suburb-link">Aveley</a>
@@ -479,15 +520,20 @@
  <a href="/electrician-ballajura/" class="suburb-link">Ballajura</a>
  <a href="/electrician-bedford/" class="suburb-link">Bedford</a>
  <a href="/electrician-beechboro/" class="suburb-link">Beechboro</a>
+ <a href="/electrician-beldon/" class="suburb-link">Beldon</a>
  <a href="/electrician-carine/" class="suburb-link">Carine</a>
  <a href="/electrician-connolly/" class="suburb-link">Connolly</a>
+ <a href="/electrician-coolbinia/" class="suburb-link">Coolbinia</a>
+ <a href="/electrician-craigie/" class="suburb-link">Craigie</a>
  <a href="/electrician-darch/" class="suburb-link">Darch</a>
  <a href="/electrician-dianella/" class="suburb-link">Dianella</a>
  <a href="/electrician-duncraig/" class="suburb-link">Duncraig</a>
  <a href="/electrician-edgewater/" class="suburb-link">Edgewater</a>
  <a href="/electrician-ellenbrook/" class="suburb-link">Ellenbrook</a>
  <a href="/electrician-girrawheen/" class="suburb-link">Girrawheen</a>
+ <a href="/electrician-glendalough/" class="suburb-link">Glendalough</a>
  <a href="/electrician-greenwood/" class="suburb-link">Greenwood</a>
+ <a href="/electrician-gwelup/" class="suburb-link">Gwelup</a>
  <a href="/electrician-hamersley/" class="suburb-link">Hamersley</a>
  <a href="/electrician-heathridge/" class="suburb-link">Heathridge</a>
  <a href="/electrician-highgate/" class="suburb-link">Highgate</a>
@@ -503,8 +549,11 @@
  <a href="/electrician-landsdale/" class="suburb-link">Landsdale</a>
  <a href="/electrician-leederville/" class="suburb-link">Leederville</a>
  <a href="/electrician-madeley/" class="suburb-link">Madeley</a>
+ <a href="/electrician-malaga/" class="suburb-link">Malaga</a>
+ <a href="/electrician-marangaroo/" class="suburb-link">Marangaroo</a>
  <a href="/electrician-marmion/" class="suburb-link">Marmion</a>
  <a href="/electrician-menora/" class="suburb-link">Menora</a>
+ <a href="/electrician-mindarie/" class="suburb-link">Mindarie</a>
  <a href="/electrician-morley/" class="suburb-link">Morley</a>
  <a href="/electrician-mount-hawthorn/" class="suburb-link">Mount Hawthorn</a>
  <a href="/electrician-mount-lawley/" class="suburb-link">Mount Lawley</a>
@@ -517,11 +566,16 @@
  <a href="/electrician-ocean-reef/" class="suburb-link">Ocean Reef</a>
  <a href="/electrician-osborne-park/" class="suburb-link">Osborne Park</a>
  <a href="/electrician-padbury/" class="suburb-link">Padbury</a>
+ <a href="/electrician-quinns-rocks/" class="suburb-link">Quinns Rocks</a>
  <a href="/electrician-stirling/" class="suburb-link">Stirling</a>
  <a href="/electrician-tuart-hill/" class="suburb-link">Tuart Hill</a>
+ <a href="/electrician-two-rocks/" class="suburb-link">Two Rocks</a>
+ <a href="/electrician-wangara/" class="suburb-link">Wangara</a>
  <a href="/electrician-wanneroo/" class="suburb-link">Wanneroo</a>
  <a href="/electrician-warwick/" class="suburb-link">Warwick</a>
+ <a href="/electrician-west-leederville/" class="suburb-link">West Leederville</a>
  <a href="/electrician-westminster/" class="suburb-link">Westminster</a>
+ <a href="/electrician-woodlands/" class="suburb-link">Woodlands</a>
  <a href="/electrician-woodvale/" class="suburb-link">Woodvale</a>
  <a href="/electrician-yokine/" class="suburb-link">Yokine</a>
  </div>
@@ -530,7 +584,7 @@
  <!-- East of Perth -->
  <div class="region-card">
  <h3 class="region-heading">East of Perth</h3>
- <div class="region-meta"><span class="suburb-count" data-count="43">43 suburbs</span></div>
+ <div class="region-meta"><span class="suburb-count" data-count="45">45 suburbs</span></div>
  <div class="suburb-grid">
  <a href="/electrician-ascot/" class="suburb-link">Ascot</a>
  <a href="/electrician-ashfield/" class="suburb-link">Ashfield</a>
@@ -563,6 +617,7 @@
  <a href="/electrician-maddington/" class="suburb-link">Maddington</a>
  <a href="/electrician-maida-vale/" class="suburb-link">Maida Vale</a>
  <a href="/electrician-maylands/" class="suburb-link">Maylands</a>
+ <a href="/electrician-middle-swan/" class="suburb-link">Middle Swan</a>
  <a href="/electrician-midland/" class="suburb-link">Midland</a>
  <a href="/electrician-orange-grove/" class="suburb-link">Orange Grove</a>
  <a href="/electrician-parkwood/" class="suburb-link">Parkwood</a>
@@ -571,6 +626,7 @@
  <a href="/electrician-rivervale/" class="suburb-link">Rivervale</a>
  <a href="/electrician-south-guildford/" class="suburb-link">South Guildford</a>
  <a href="/electrician-st-james/" class="suburb-link">St James</a>
+ <a href="/electrician-stratton/" class="suburb-link">Stratton</a>
  <a href="/electrician-victoria-park/" class="suburb-link">Victoria Park</a>
  <a href="/electrician-viveash/" class="suburb-link">Viveash</a>
  <a href="/electrician-wattle-grove/" class="suburb-link">Wattle Grove</a>
@@ -581,7 +637,7 @@
  <!-- South of Perth -->
  <div class="region-card">
  <h3 class="region-heading">South of Perth</h3>
- <div class="region-meta"><span class="suburb-count" data-count="69">69 suburbs</span></div>
+ <div class="region-meta"><span class="suburb-count" data-count="72">72 suburbs</span></div>
  <div class="suburb-grid">
  <a href="/electrician-alfred-cove/" class="suburb-link">Alfred Cove</a>
  <a href="/electrician-applecross/" class="suburb-link">Applecross</a>
@@ -591,6 +647,7 @@
  <a href="/electrician-aubin-grove/" class="suburb-link">Aubin Grove</a>
  <a href="/electrician-bateman/" class="suburb-link">Bateman</a>
  <a href="/electrician-beaconsfield/" class="suburb-link">Beaconsfield</a>
+ <a href="/electrician-beeliar/" class="suburb-link">Beeliar</a>
  <a href="/electrician-bentley/" class="suburb-link">Bentley</a>
  <a href="/electrician-bibra-lake/" class="suburb-link">Bibra Lake</a>
  <a href="/electrician-bicton/" class="suburb-link">Bicton</a>
@@ -631,11 +688,13 @@
  <a href="/electrician-mount-pleasant/" class="suburb-link">Mount Pleasant</a>
  <a href="/electrician-munster/" class="suburb-link">Munster</a>
  <a href="/electrician-myaree/" class="suburb-link">Myaree</a>
+ <a href="/electrician-oconnor/" class="suburb-link">O'Connor</a>
  <a href="/electrician-palmyra/" class="suburb-link">Palmyra</a>
  <a href="/electrician-piara-waters/" class="suburb-link">Piara Waters</a>
  <a href="/electrician-riverton/" class="suburb-link">Riverton</a>
  <a href="/electrician-rossmoyne/" class="suburb-link">Rossmoyne</a>
  <a href="/electrician-salter-point/" class="suburb-link">Salter Point</a>
+ <a href="/electrician-samson/" class="suburb-link">Samson</a>
  <a href="/electrician-seville-grove/" class="suburb-link">Seville Grove</a>
  <a href="/electrician-shelley/" class="suburb-link">Shelley</a>
  <a href="/electrician-south-fremantle/" class="suburb-link">South Fremantle</a>
@@ -658,17 +717,25 @@
  <!-- West of Perth -->
  <div class="region-card">
  <h3 class="region-heading">West of Perth</h3>
- <div class="region-meta"><span class="suburb-count" data-count="17">17 suburbs</span></div>
+ <div class="region-meta"><span class="suburb-count" data-count="24">24 suburbs</span></div>
  <div class="suburb-grid">
+ <a href="/electrician-churchlands/" class="suburb-link">Churchlands</a>
  <a href="/electrician-city-beach/" class="suburb-link">City Beach</a>
  <a href="/electrician-claremont/" class="suburb-link">Claremont</a>
  <a href="/electrician-cottesloe/" class="suburb-link">Cottesloe</a>
+ <a href="/electrician-crawley/" class="suburb-link">Crawley</a>
+ <a href="/electrician-daglish/" class="suburb-link">Daglish</a>
  <a href="/electrician-dalkeith/" class="suburb-link">Dalkeith</a>
  <a href="/electrician-doubleview/" class="suburb-link">Doubleview</a>
  <a href="/electrician-floreat/" class="suburb-link">Floreat</a>
+ <a href="/electrician-jolimont/" class="suburb-link">Jolimont</a>
+ <a href="/electrician-karrakatta/" class="suburb-link">Karrakatta</a>
  <a href="/electrician-mosman-park/" class="suburb-link">Mosman Park</a>
+ <a href="/electrician-mount-claremont/" class="suburb-link">Mount Claremont</a>
  <a href="/electrician-nedlands/" class="suburb-link">Nedlands</a>
  <a href="/electrician-north-fremantle/" class="suburb-link">North Fremantle</a>
+ <a href="/electrician-peppermint-grove/" class="suburb-link">Peppermint Grove</a>
+ <a href="/electrician-perth/" class="suburb-link">Perth CBD</a>
  <a href="/electrician-scarborough/" class="suburb-link">Scarborough</a>
  <a href="/electrician-shenton-park/" class="suburb-link">Shenton Park</a>
  <a href="/electrician-subiaco/" class="suburb-link">Subiaco</a>
@@ -676,7 +743,6 @@
  <a href="/electrician-trigg/" class="suburb-link">Trigg</a>
  <a href="/electrician-wembley/" class="suburb-link">Wembley</a>
  <a href="/electrician-west-perth/" class="suburb-link">West Perth</a>
- <a href="/electrician-perth/" class="suburb-link">Perth CBD</a>
  </div>
  </div>
 
@@ -803,8 +869,9 @@
 
 <script src="/js/main-v57.js"></script>
 
-<!-- Stape GTM noscript fallback -->
-<noscript><iframe src="https://aweuhnwl.au.stape.io/ns.html" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://sgtm.responseelectricianperth.com.au/ns.html?id=GTM-W79MNWM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 </body>
 </html>

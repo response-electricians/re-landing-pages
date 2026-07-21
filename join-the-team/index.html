@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-AU">
 <head>
+  <!-- Google tag (gtag.js) - GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TWGMNH75GQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TWGMNH75GQ');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -32,7 +40,7 @@
   <!-- Preconnect (font + tracking only — reduced DNS lookups) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://aweuhnwl.au.stape.io">
+  <link rel="preconnect" href="https://sgtm.responseelectricianperth.com.au">
 
   <!-- Google Fonts — loaded via link instead of CSS @import (eliminates render-blocking chain) -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500..900&display=swap">
@@ -52,9 +60,24 @@
   <link rel="stylesheet" href="/css/main-v57.css">
   <link rel="stylesheet" href="/css/header-footer-v57.css">
 
-  <!-- Stape Custom Loader (Server-Side GTM) — must be early for dataLayer -->
+  <!-- Google Tag Manager (Stape Custom Loader — sGTM) -->
+  <script>!function(){"use strict";function l(e){for(var t=e,r=0,n=document.cookie.split(";");r<n.length;r++){var o=n[r].split("=");if(o[0].trim()===t)return o[1]}}function s(e){return localStorage.getItem(e)}function u(e){return window[e]}function A(e,t){e=document.querySelector(e);return t?null==e?void 0:e.getAttribute(t):null==e?void 0:e.textContent}var e=window,t=document,r="script",n="dataLayer",o="https://sgtm.responseelectricianperth.com.au",a="",i="1raweuhnwl",c="ea24ur8y=BRNTLyEoWjZbTiMmIihRF1FFQFlTARlcHhIdGBoLBAQJGwsLARceAgUWABgQFwMJQhQBBVsEAg%3D%3D",g="cookie",v="_stape_uid",E="",d=!1;try{var d=!!g&&(m=navigator.userAgent,!!(m=new RegExp("Version/([0-9._]+)(.*Mobile)?.*Safari.*").exec(m)))&&16.4<=parseFloat(m[1]),f="stapeUserId"===g,I=d&&!f?function(e,t,r){void 0===t&&(t="");var n={cookie:l,localStorage:s,jsVariable:u,cssSelector:A},t=Array.isArray(t)?t:[t];if(e&&n[e])for(var o=n[e],a=0,i=t;a<i.length;a++){var c=i[a],c=r?o(c,r):o(c);if(c)return c}else console.warn("invalid uid source",e)}(g,v,E):void 0;d=d&&(!!I||f)}catch(e){console.error(e)}var m=e,g=(m[n]=m[n]||[],m[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"}),t.getElementsByTagName(r)[0]),v=I?"&bi="+encodeURIComponent(I):"",E=t.createElement(r),f=(d&&(i=8<i.length?i.replace(/([a-z]{8}$)/,"kp$1"):"kp"+i),!d&&a?a:o);E.async=!0,E.src=f+"/"+i+".js?"+c+v,null!=(e=g.parentNode)&&e.insertBefore(E,g)}();</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google Ads: gtag init + phone call tracking -->
   <script>
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src='https://aweuhnwl.au.stape.io/1raweuhnwl.js';f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-1021126844');
+  /* Primary: 60s qualified call, A$150 — mobile */
+  gtag('config', 'AW-1021126844/6DiCCOHe65wcELzR9OYD', {'phone_conversion_number': '0483 967 122'});
+  /* Secondary: 5s call attempt, A$1 — mobile */
+  gtag('config', 'AW-1021126844/gEjQCMyr_5wcELzR9OYD', {'phone_conversion_number': '0483 967 122'});
+  /* Primary: 60s qualified call, A$150 — landline */
+  gtag('config', 'AW-1021126844/6DiCCOHe65wcELzR9OYD', {'phone_conversion_number': '(08) 9106 9197'});
+  /* Secondary: 5s call attempt, A$1 — landline */
+  gtag('config', 'AW-1021126844/gEjQCMyr_5wcELzR9OYD', {'phone_conversion_number': '(08) 9106 9197'});
   </script>
 
   <!-- Bing UET, Clarity, HubSpot — deferred until after page paint to reduce blocking -->
@@ -315,8 +338,22 @@
   .pain-card { padding: 20px 16px; }
   .stat-card { padding: 20px 12px; }
   .trust-bar { gap: 16px 20px; }
+  .expect-grid { grid-template-columns: 1fr !important; gap: 16px; }
+  .problem, .solution, .stats, .expect { padding-left: 0 !important; padding-right: 0 !important; }
 }
   </style>
+
+  <!-- Meta Pixel — Hiring campaign (page-scoped, Join the Team only) -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1007408322615851');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1007408322615851&ev=PageView&noscript=1" alt=""/></noscript>
+  <!-- End Meta Pixel -->
+  <!-- Uploadcare file upload widget -->
+  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+  <script>UPLOADCARE_PUBLIC_KEY = 'ba576b39298a3015a8d3';</script>
 </head>
 <body class="page-body" data-city="Undervalued?" data-pagename="Electrician Jobs Perth | Join Response Electricians — We&#x27;re Hiring">
 
@@ -395,9 +432,19 @@
         </div>
       </div>
 
-      <a href="/about/">About</a>
+      <div class="nav-dropdown">
+        <a href="/about/" class="nav-dropdown-trigger">
+          About
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <div class="nav-dropdown-menu">
+          <a href="/about/">About Us</a>
+          <a href="/meet-the-team/">Meet the Team</a>
+        </div>
+      </div>
       <a href="/reviews/">Reviews</a>
       <a href="/join-the-team/">Join Our Team</a>
+      <a href="/blog/">Blog</a>
       <a href="/contact/">Contact</a>
     </nav>
 
@@ -480,9 +527,17 @@
     <a href="/areas-we-service/">View All Areas</a>
   </div>
 
-  <a href="/about/">About Us</a>
+  <button class="mobile-dropdown-toggle">
+    About
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+  <div class="mobile-dropdown-items">
+    <a href="/about/">About Us</a>
+    <a href="/meet-the-team/">Meet the Team</a>
+  </div>
   <a href="/reviews/">Reviews</a>
   <a href="/join-the-team/">Join Our Team</a>
+  <a href="/blog/">Blog</a>
   <a href="/contact/">Contact</a>
 
   <div class="mobile-nav-divider"></div>
@@ -932,6 +987,16 @@
           </div>
         </div>
 
+        <div class="form-row" style="margin-bottom:24px;">
+          <label for="resume" style="display:block;margin-bottom:8px;font-weight:700;">Resume / CV <span style="font-weight:400;color:#888;">(optional — PDF, DOC, DOCX)</span></label>
+          <input type="hidden" id="resume" name="resume" role="uploadcare-uploader"
+            data-public-key="ba576b39298a3015a8d3"
+            data-tabs="file"
+            data-file-types="pdf doc docx"
+            data-images-only="false"
+            data-preview-step="false" />
+        </div>
+
         <button type="submit" class="form-submit" id="submitBtn">Submit My Application</button>
         <p class="form-note">Your information is kept confidential. We'll only contact you about this role.</p>
       </form>
@@ -1037,53 +1102,42 @@
       submitBtn.disabled = true;
       submitBtn.textContent = 'Submitting...';
 
-      // Build HubSpot payload
-      var fields = [
-        { name: 'firstname', value: document.getElementById('firstname').value },
-        { name: 'lastname', value: document.getElementById('lastname').value },
-        { name: 'phone', value: document.getElementById('phone').value },
-        { name: 'email', value: document.getElementById('email').value },
-        { name: 'city', value: document.getElementById('suburb').value },
-        { name: 'message', value:
-          'HIRING APPLICATION\n' +
-          '---\n' +
-          'Licence: ' + document.getElementById('licence').value + '\n' +
-          'Experience: ' + document.getElementById('experience').value + '\n' +
-          'Current Situation: ' + document.getElementById('current_situation').value + '\n' +
-          '---\n' +
-          'Why Response: ' + document.getElementById('why_response').value + '\n' +
-          '---\n' +
-          'Best Work: ' + document.getElementById('best_work').value + '\n' +
-          '---\n' +
-          '5-Year Goal: ' + (document.getElementById('five_years').value || 'Not provided') + '\n' +
-          '---\n' +
-          'Confirmed: Qualified Electrician, Drivers Licence, Right to Work in AU'
-        }
-      ];
-
-      var hutk = null;
-      var cookies = document.cookie.split(';');
-      for (var c = 0; c < cookies.length; c++) {
-        var cookie = cookies[c].trim();
-        if (cookie.indexOf('hubspotutk=') === 0) {
-          hutk = cookie.substring(11);
-          break;
-        }
-      }
-
+      // Build clean JSON payload — each field becomes a named merge field in Zapier
+      // and flows through to the Asana task (project: Hiring Pipeline — Electricians, section: New Application)
       var payload = {
-        fields: fields,
-        context: {
-          pageUri: window.location.href,
-          pageName: 'Hiring - Join the Team'
-        }
+        firstname: document.getElementById('firstname').value,
+        lastname: document.getElementById('lastname').value,
+        phone: document.getElementById('phone').value,
+        email: document.getElementById('email').value,
+        suburb: document.getElementById('suburb').value,
+        licence: document.getElementById('licence').value,
+        experience: document.getElementById('experience').value,
+        current_situation: document.getElementById('current_situation').value,
+        why_response: document.getElementById('why_response').value,
+        best_work: document.getElementById('best_work').value,
+        five_years: document.getElementById('five_years').value || 'Not provided',
+        confirmed_qualified: document.getElementById('qualified').checked ? 'Yes' : 'No',
+        confirmed_drivers_licence: document.getElementById('drivers').checked ? 'Yes' : 'No',
+        confirmed_right_to_work: document.getElementById('right_to_work').checked ? 'Yes' : 'No',
+        resume_url: (document.getElementById('resume') && document.getElementById('resume').value) ? document.getElementById('resume').value : 'Not provided',
+        submitted_at: new Date().toISOString(),
+        page_url: window.location.href,
+        page_name: 'Hiring - Join the Team',
+        source: 'Website Application Form'
       };
-      if (hutk) { payload.context.hutk = hutk; }
 
-      fetch('https://api.hsforms.com/submissions/v3/integration/submit/45117370/75792dd4-d058-4a9c-9ee4-269e712baf6a', {
+      // Encode every field into a query string. Zapier's Catch Hook always parses
+      // the URL query string into merge fields — this is the most reliable path.
+      // We also send the same data as a form-encoded body for belt-and-suspenders.
+      var encodedFields = Object.keys(payload).map(function(k) {
+        var v = payload[k] == null ? '' : String(payload[k]);
+        return encodeURIComponent(k) + '=' + encodeURIComponent(v);
+      }).join('&');
+
+      fetch('https://hooks.zapier.com/hooks/catch/25324955/ujvo8op/?' + encodedFields, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encodedFields
       })
       .then(function(response) {
         if (response.ok) {
@@ -1091,14 +1145,16 @@
           document.querySelector('.form-challenge').style.display = 'none';
           formSuccess.style.display = 'block';
 
-          // Push conversion event
+          // Push conversion event to GTM dataLayer
           if (typeof window.dataLayer !== 'undefined') {
             window.dataLayer.push({ event: 'formSubmit', formType: 'hiring_application' });
           }
 
-          // Meta Pixel conversion
+          // Meta Pixel conversions — both custom SubmitApplication and standard Lead
+          // Lead is what most Facebook hiring campaigns optimise against by default
           if (typeof fbq !== 'undefined') {
             fbq('track', 'SubmitApplication');
+            fbq('track', 'Lead', { content_name: 'Hiring Application', content_category: 'Electrician' });
           }
         } else {
           submitBtn.disabled = false;
@@ -1215,8 +1271,9 @@
 
 <script src="/js/main-v57.js"></script>
 
-<!-- Stape GTM noscript fallback -->
-<noscript><iframe src="https://aweuhnwl.au.stape.io/ns.html" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://sgtm.responseelectricianperth.com.au/ns.html?id=GTM-W79MNWM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 </body>
 </html>

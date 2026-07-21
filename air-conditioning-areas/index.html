@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-AU">
 <head>
+  <!-- Google tag (gtag.js) - GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TWGMNH75GQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TWGMNH75GQ');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -32,7 +40,7 @@
   <!-- Preconnect (font + tracking only — reduced DNS lookups) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://aweuhnwl.au.stape.io">
+  <link rel="preconnect" href="https://sgtm.responseelectricianperth.com.au">
 
   <!-- Google Fonts — loaded via link instead of CSS @import (eliminates render-blocking chain) -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500..900&display=swap">
@@ -52,9 +60,24 @@
   <link rel="stylesheet" href="/css/main-v57.css">
   <link rel="stylesheet" href="/css/header-footer-v57.css">
 
-  <!-- Stape Custom Loader (Server-Side GTM) — must be early for dataLayer -->
+  <!-- Google Tag Manager (Stape Custom Loader — sGTM) -->
+  <script>!function(){"use strict";function l(e){for(var t=e,r=0,n=document.cookie.split(";");r<n.length;r++){var o=n[r].split("=");if(o[0].trim()===t)return o[1]}}function s(e){return localStorage.getItem(e)}function u(e){return window[e]}function A(e,t){e=document.querySelector(e);return t?null==e?void 0:e.getAttribute(t):null==e?void 0:e.textContent}var e=window,t=document,r="script",n="dataLayer",o="https://sgtm.responseelectricianperth.com.au",a="",i="1raweuhnwl",c="ea24ur8y=BRNTLyEoWjZbTiMmIihRF1FFQFlTARlcHhIdGBoLBAQJGwsLARceAgUWABgQFwMJQhQBBVsEAg%3D%3D",g="cookie",v="_stape_uid",E="",d=!1;try{var d=!!g&&(m=navigator.userAgent,!!(m=new RegExp("Version/([0-9._]+)(.*Mobile)?.*Safari.*").exec(m)))&&16.4<=parseFloat(m[1]),f="stapeUserId"===g,I=d&&!f?function(e,t,r){void 0===t&&(t="");var n={cookie:l,localStorage:s,jsVariable:u,cssSelector:A},t=Array.isArray(t)?t:[t];if(e&&n[e])for(var o=n[e],a=0,i=t;a<i.length;a++){var c=i[a],c=r?o(c,r):o(c);if(c)return c}else console.warn("invalid uid source",e)}(g,v,E):void 0;d=d&&(!!I||f)}catch(e){console.error(e)}var m=e,g=(m[n]=m[n]||[],m[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"}),t.getElementsByTagName(r)[0]),v=I?"&bi="+encodeURIComponent(I):"",E=t.createElement(r),f=(d&&(i=8<i.length?i.replace(/([a-z]{8}$)/,"kp$1"):"kp"+i),!d&&a?a:o);E.async=!0,E.src=f+"/"+i+".js?"+c+v,null!=(e=g.parentNode)&&e.insertBefore(E,g)}();</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google Ads: gtag init + phone call tracking -->
   <script>
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src='https://aweuhnwl.au.stape.io/1raweuhnwl.js';f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-1021126844');
+  /* Primary: 60s qualified call, A$150 — mobile */
+  gtag('config', 'AW-1021126844/6DiCCOHe65wcELzR9OYD', {'phone_conversion_number': '0483 967 122'});
+  /* Secondary: 5s call attempt, A$1 — mobile */
+  gtag('config', 'AW-1021126844/gEjQCMyr_5wcELzR9OYD', {'phone_conversion_number': '0483 967 122'});
+  /* Primary: 60s qualified call, A$150 — landline */
+  gtag('config', 'AW-1021126844/6DiCCOHe65wcELzR9OYD', {'phone_conversion_number': '(08) 9106 9197'});
+  /* Secondary: 5s call attempt, A$1 — landline */
+  gtag('config', 'AW-1021126844/gEjQCMyr_5wcELzR9OYD', {'phone_conversion_number': '(08) 9106 9197'});
   </script>
 
   <!-- Bing UET, Clarity, HubSpot — deferred until after page paint to reduce blocking -->
@@ -224,9 +247,19 @@
         </div>
       </div>
 
-      <a href="/about/">About</a>
+      <div class="nav-dropdown">
+        <a href="/about/" class="nav-dropdown-trigger">
+          About
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <div class="nav-dropdown-menu">
+          <a href="/about/">About Us</a>
+          <a href="/meet-the-team/">Meet the Team</a>
+        </div>
+      </div>
       <a href="/reviews/">Reviews</a>
       <a href="/join-the-team/">Join Our Team</a>
+      <a href="/blog/">Blog</a>
       <a href="/contact/">Contact</a>
     </nav>
 
@@ -309,9 +342,17 @@
     <a href="/areas-we-service/">View All Areas</a>
   </div>
 
-  <a href="/about/">About Us</a>
+  <button class="mobile-dropdown-toggle">
+    About
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+  <div class="mobile-dropdown-items">
+    <a href="/about/">About Us</a>
+    <a href="/meet-the-team/">Meet the Team</a>
+  </div>
   <a href="/reviews/">Reviews</a>
   <a href="/join-the-team/">Join Our Team</a>
+  <a href="/blog/">Blog</a>
   <a href="/contact/">Contact</a>
 
   <div class="mobile-nav-divider"></div>
@@ -445,7 +486,7 @@
  <!-- North of Perth -->
  <div class="region-card">
  <h3 class="region-heading">North of Perth</h3>
- <div class="region-meta"><span class="suburb-count" data-count="52">52 suburbs</span></div>
+ <div class="region-meta"><span class="suburb-count" data-count="65">65 suburbs</span></div>
  <div class="suburb-grid">
  <a href="/air-conditioning-alexander-heights/" class="suburb-link">Alexander Heights</a>
  <a href="/air-conditioning-aveley/" class="suburb-link">Aveley</a>
@@ -454,15 +495,20 @@
  <a href="/air-conditioning-ballajura/" class="suburb-link">Ballajura</a>
  <a href="/air-conditioning-bedford/" class="suburb-link">Bedford</a>
  <a href="/air-conditioning-beechboro/" class="suburb-link">Beechboro</a>
+ <a href="/air-conditioning-beldon/" class="suburb-link">Beldon</a>
  <a href="/air-conditioning-carine/" class="suburb-link">Carine</a>
  <a href="/air-conditioning-connolly/" class="suburb-link">Connolly</a>
+ <a href="/air-conditioning-coolbinia/" class="suburb-link">Coolbinia</a>
+ <a href="/air-conditioning-craigie/" class="suburb-link">Craigie</a>
  <a href="/air-conditioning-darch/" class="suburb-link">Darch</a>
  <a href="/air-conditioning-dianella/" class="suburb-link">Dianella</a>
  <a href="/air-conditioning-duncraig/" class="suburb-link">Duncraig</a>
  <a href="/air-conditioning-edgewater/" class="suburb-link">Edgewater</a>
  <a href="/air-conditioning-ellenbrook/" class="suburb-link">Ellenbrook</a>
  <a href="/air-conditioning-girrawheen/" class="suburb-link">Girrawheen</a>
+ <a href="/air-conditioning-glendalough/" class="suburb-link">Glendalough</a>
  <a href="/air-conditioning-greenwood/" class="suburb-link">Greenwood</a>
+ <a href="/air-conditioning-gwelup/" class="suburb-link">Gwelup</a>
  <a href="/air-conditioning-hamersley/" class="suburb-link">Hamersley</a>
  <a href="/air-conditioning-heathridge/" class="suburb-link">Heathridge</a>
  <a href="/air-conditioning-highgate/" class="suburb-link">Highgate</a>
@@ -478,8 +524,11 @@
  <a href="/air-conditioning-landsdale/" class="suburb-link">Landsdale</a>
  <a href="/air-conditioning-leederville/" class="suburb-link">Leederville</a>
  <a href="/air-conditioning-madeley/" class="suburb-link">Madeley</a>
+ <a href="/air-conditioning-malaga/" class="suburb-link">Malaga</a>
+ <a href="/air-conditioning-marangaroo/" class="suburb-link">Marangaroo</a>
  <a href="/air-conditioning-marmion/" class="suburb-link">Marmion</a>
  <a href="/air-conditioning-menora/" class="suburb-link">Menora</a>
+ <a href="/air-conditioning-mindarie/" class="suburb-link">Mindarie</a>
  <a href="/air-conditioning-morley/" class="suburb-link">Morley</a>
  <a href="/air-conditioning-mount-hawthorn/" class="suburb-link">Mount Hawthorn</a>
  <a href="/air-conditioning-mount-lawley/" class="suburb-link">Mount Lawley</a>
@@ -492,11 +541,16 @@
  <a href="/air-conditioning-ocean-reef/" class="suburb-link">Ocean Reef</a>
  <a href="/air-conditioning-osborne-park/" class="suburb-link">Osborne Park</a>
  <a href="/air-conditioning-padbury/" class="suburb-link">Padbury</a>
+ <a href="/air-conditioning-quinns-rocks/" class="suburb-link">Quinns Rocks</a>
  <a href="/air-conditioning-stirling/" class="suburb-link">Stirling</a>
  <a href="/air-conditioning-tuart-hill/" class="suburb-link">Tuart Hill</a>
+ <a href="/air-conditioning-two-rocks/" class="suburb-link">Two Rocks</a>
+ <a href="/air-conditioning-wangara/" class="suburb-link">Wangara</a>
  <a href="/air-conditioning-wanneroo/" class="suburb-link">Wanneroo</a>
  <a href="/air-conditioning-warwick/" class="suburb-link">Warwick</a>
+ <a href="/air-conditioning-west-leederville/" class="suburb-link">West Leederville</a>
  <a href="/air-conditioning-westminster/" class="suburb-link">Westminster</a>
+ <a href="/air-conditioning-woodlands/" class="suburb-link">Woodlands</a>
  <a href="/air-conditioning-woodvale/" class="suburb-link">Woodvale</a>
  <a href="/air-conditioning-yokine/" class="suburb-link">Yokine</a>
  </div>
@@ -505,7 +559,7 @@
  <!-- East of Perth -->
  <div class="region-card">
  <h3 class="region-heading">East of Perth</h3>
- <div class="region-meta"><span class="suburb-count" data-count="43">43 suburbs</span></div>
+ <div class="region-meta"><span class="suburb-count" data-count="45">45 suburbs</span></div>
  <div class="suburb-grid">
  <a href="/air-conditioning-ascot/" class="suburb-link">Ascot</a>
  <a href="/air-conditioning-ashfield/" class="suburb-link">Ashfield</a>
@@ -538,6 +592,7 @@
  <a href="/air-conditioning-maddington/" class="suburb-link">Maddington</a>
  <a href="/air-conditioning-maida-vale/" class="suburb-link">Maida Vale</a>
  <a href="/air-conditioning-maylands/" class="suburb-link">Maylands</a>
+ <a href="/air-conditioning-middle-swan/" class="suburb-link">Middle Swan</a>
  <a href="/air-conditioning-midland/" class="suburb-link">Midland</a>
  <a href="/air-conditioning-orange-grove/" class="suburb-link">Orange Grove</a>
  <a href="/air-conditioning-parkwood/" class="suburb-link">Parkwood</a>
@@ -546,6 +601,7 @@
  <a href="/air-conditioning-rivervale/" class="suburb-link">Rivervale</a>
  <a href="/air-conditioning-south-guildford/" class="suburb-link">South Guildford</a>
  <a href="/air-conditioning-st-james/" class="suburb-link">St James</a>
+ <a href="/air-conditioning-stratton/" class="suburb-link">Stratton</a>
  <a href="/air-conditioning-victoria-park/" class="suburb-link">Victoria Park</a>
  <a href="/air-conditioning-viveash/" class="suburb-link">Viveash</a>
  <a href="/air-conditioning-wattle-grove/" class="suburb-link">Wattle Grove</a>
@@ -556,7 +612,7 @@
  <!-- South of Perth -->
  <div class="region-card">
  <h3 class="region-heading">South of Perth</h3>
- <div class="region-meta"><span class="suburb-count" data-count="69">69 suburbs</span></div>
+ <div class="region-meta"><span class="suburb-count" data-count="72">72 suburbs</span></div>
  <div class="suburb-grid">
  <a href="/air-conditioning-alfred-cove/" class="suburb-link">Alfred Cove</a>
  <a href="/air-conditioning-applecross/" class="suburb-link">Applecross</a>
@@ -566,6 +622,7 @@
  <a href="/air-conditioning-aubin-grove/" class="suburb-link">Aubin Grove</a>
  <a href="/air-conditioning-bateman/" class="suburb-link">Bateman</a>
  <a href="/air-conditioning-beaconsfield/" class="suburb-link">Beaconsfield</a>
+ <a href="/air-conditioning-beeliar/" class="suburb-link">Beeliar</a>
  <a href="/air-conditioning-bentley/" class="suburb-link">Bentley</a>
  <a href="/air-conditioning-bibra-lake/" class="suburb-link">Bibra Lake</a>
  <a href="/air-conditioning-bicton/" class="suburb-link">Bicton</a>
@@ -606,11 +663,13 @@
  <a href="/air-conditioning-mount-pleasant/" class="suburb-link">Mount Pleasant</a>
  <a href="/air-conditioning-munster/" class="suburb-link">Munster</a>
  <a href="/air-conditioning-myaree/" class="suburb-link">Myaree</a>
+ <a href="/air-conditioning-oconnor/" class="suburb-link">O'Connor</a>
  <a href="/air-conditioning-palmyra/" class="suburb-link">Palmyra</a>
  <a href="/air-conditioning-piara-waters/" class="suburb-link">Piara Waters</a>
  <a href="/air-conditioning-riverton/" class="suburb-link">Riverton</a>
  <a href="/air-conditioning-rossmoyne/" class="suburb-link">Rossmoyne</a>
  <a href="/air-conditioning-salter-point/" class="suburb-link">Salter Point</a>
+ <a href="/air-conditioning-samson/" class="suburb-link">Samson</a>
  <a href="/air-conditioning-seville-grove/" class="suburb-link">Seville Grove</a>
  <a href="/air-conditioning-shelley/" class="suburb-link">Shelley</a>
  <a href="/air-conditioning-south-fremantle/" class="suburb-link">South Fremantle</a>
@@ -633,17 +692,25 @@
  <!-- West of Perth -->
  <div class="region-card">
  <h3 class="region-heading">West of Perth</h3>
- <div class="region-meta"><span class="suburb-count" data-count="17">17 suburbs</span></div>
+ <div class="region-meta"><span class="suburb-count" data-count="24">24 suburbs</span></div>
  <div class="suburb-grid">
+ <a href="/air-conditioning-churchlands/" class="suburb-link">Churchlands</a>
  <a href="/air-conditioning-city-beach/" class="suburb-link">City Beach</a>
  <a href="/air-conditioning-claremont/" class="suburb-link">Claremont</a>
  <a href="/air-conditioning-cottesloe/" class="suburb-link">Cottesloe</a>
+ <a href="/air-conditioning-crawley/" class="suburb-link">Crawley</a>
+ <a href="/air-conditioning-daglish/" class="suburb-link">Daglish</a>
  <a href="/air-conditioning-dalkeith/" class="suburb-link">Dalkeith</a>
  <a href="/air-conditioning-doubleview/" class="suburb-link">Doubleview</a>
  <a href="/air-conditioning-floreat/" class="suburb-link">Floreat</a>
+ <a href="/air-conditioning-jolimont/" class="suburb-link">Jolimont</a>
+ <a href="/air-conditioning-karrakatta/" class="suburb-link">Karrakatta</a>
  <a href="/air-conditioning-mosman-park/" class="suburb-link">Mosman Park</a>
+ <a href="/air-conditioning-mount-claremont/" class="suburb-link">Mount Claremont</a>
  <a href="/air-conditioning-nedlands/" class="suburb-link">Nedlands</a>
  <a href="/air-conditioning-north-fremantle/" class="suburb-link">North Fremantle</a>
+ <a href="/air-conditioning-peppermint-grove/" class="suburb-link">Peppermint Grove</a>
+ <a href="/air-conditioning-perth/" class="suburb-link">Perth CBD</a>
  <a href="/air-conditioning-scarborough/" class="suburb-link">Scarborough</a>
  <a href="/air-conditioning-shenton-park/" class="suburb-link">Shenton Park</a>
  <a href="/air-conditioning-subiaco/" class="suburb-link">Subiaco</a>
@@ -651,7 +718,6 @@
  <a href="/air-conditioning-trigg/" class="suburb-link">Trigg</a>
  <a href="/air-conditioning-wembley/" class="suburb-link">Wembley</a>
  <a href="/air-conditioning-west-perth/" class="suburb-link">West Perth</a>
- <a href="/air-conditioning-perth/" class="suburb-link">Perth CBD</a>
  </div>
  </div>
 
@@ -778,8 +844,9 @@
 
 <script src="/js/main-v57.js"></script>
 
-<!-- Stape GTM noscript fallback -->
-<noscript><iframe src="https://aweuhnwl.au.stape.io/ns.html" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://sgtm.responseelectricianperth.com.au/ns.html?id=GTM-W79MNWM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 </body>
 </html>

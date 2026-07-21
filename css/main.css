@@ -1298,7 +1298,7 @@
   .pain-grid { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: 1fr 1fr; }
-  .expect-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .expect-grid { grid-template-columns: 1fr; gap: 16px; }
   .testimonial-grid { grid-template-columns: 1fr; }
   .form-row-half { grid-template-columns: 1fr; }
   .apply-form { padding: 28px 20px; }
@@ -1307,6 +1307,7 @@
   .trust-bar { gap: 12px; }
   .trust-item { font-size: 11px; }
   .inline-cta-bar .container { flex-direction: column; gap: 12px; }
+  .problem, .solution, .stats, .expect { padding-left: 12px; padding-right: 12px; }
 }
 
 /* ===== JOIN-THE-TEAM PAGE STYLES ===== */

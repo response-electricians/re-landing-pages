@@ -42,12 +42,22 @@
 /air-conditioning                             /air-conditioning-perth/             301
 /air-conditioning/                            /air-conditioning-perth/             301
 
-# ============================================================
-# 404 AUDIT ADDITIONS - appended 2026-06-30
-# A) old service-name variants  B) paid '-lp' landing pages
-# ============================================================
+# Craigie old URLs from previous site (found via Google index)
+/electrician-craigie-lp                       /electrician-craigie/                301
+/electrician-craigie-lp/                      /electrician-craigie/                301
+/electrician-craigie-old                      /electrician-craigie/                301
+/electrician-craigie-old/                     /electrician-craigie/                301
 
-# --- A. Broken old service-name URLs (verified 404) ---
+# Additional old URLs found via Google index (2026-06-30)
+/emergency-electrician-perth-lp               /emergency-electrician-perth/        301
+/emergency-electrician-perth-lp/              /emergency-electrician-perth/        301
+/responseelectricianquoteform                 /contact/                            301
+/responseelectricianquoteform/                /contact/                            301
+/blog/5-best-phillips-hue-lighting-apps-and-why-to-use-them   /blog/               301
+/blog/5-best-phillips-hue-lighting-apps-and-why-to-use-them/  /blog/               301
+
+# ===== 404 AUDIT ADDITIONS (Claude) 2026-06-30 =====
+# A) old service-name variants  B) service '-lp' paid landing pages
 /electrical-safety-switch-installation-perth   /safety-switch-installation-perth/     301
 /electrical-safety-switch-installation-perth/  /safety-switch-installation-perth/     301
 /exterior-lighting-perth                       /outdoor-lighting-perth/               301
@@ -72,13 +82,22 @@
 /switchboard-upgrade-perth/                    /switchboard-upgrades-perth/           301
 /terms                                         /terms-of-service/                     301
 /terms/                                        /terms-of-service/                     301
-
-# --- B. Paid-campaign '-lp' landing pages (no -lp page exists -> 404) ---
 /3-phase-power-installation-perth-lp           /3-phase-power-installation-perth/     301
 /adhoc-maintenance-electrician-perth-lp        /adhoc-maintenance-electrician-perth/  301
 /air-conditioning-perth-lp                     /air-conditioning-perth/               301
 /bathroom-electrician-perth-lp                 /bathroom-electrician-perth/           301
 /bidirectional-charging-perth-lp               /bidirectional-charging-perth/         301
+/blog/bathroom-exhaust-fan-perth-lp            /blog/bathroom-exhaust-fan-perth/      301
+/blog/eofy-electrical-perth-lp                 /blog/eofy-electrical-perth/           301
+/blog/heat-lamps-perth-lp                      /blog/heat-lamps-perth/                301
+/blog/home-ev-charger-perth-lp                 /blog/home-ev-charger-perth/           301
+/blog/led-downlights-perth-lp                  /blog/led-downlights-perth/            301
+/blog/outdoor-heat-strips-perth-lp             /blog/outdoor-heat-strips-perth/       301
+/blog/power-point-plate-upgrades-perth-lp      /blog/power-point-plate-upgrades-perth/ 301
+/blog/rcd-testing-perth-lp                     /blog/rcd-testing-perth/               301
+/blog/security-lights-perth-lp                 /blog/security-lights-perth/           301
+/blog/surge-protection-perth-lp                /blog/surge-protection-perth/          301
+/blog/switchboard-upgrade-perth-lp             /blog/switchboard-upgrade-perth/       301
 /cctv-communications-perth-lp                  /cctv-communications-perth/            301
 /ceiling-fan-installation-perth-lp             /ceiling-fan-installation-perth/       301
 /commercial-electrician-perth-lp               /commercial-electrician-perth/         301
@@ -93,7 +112,6 @@
 /electrical-repairs-perth-lp                   /electrical-repairs-perth/             301
 /electrical-safety-inspection-perth-lp         /electrical-safety-inspection-perth/   301
 /electrician-perth-lp                          /electrician-perth/                    301
-/emergency-electrician-perth-lp                /emergency-electrician-perth/          301
 /emergency-lighting-perth-lp                   /emergency-lighting-perth/             301
 /ev-charger-installation-perth-lp              /ev-charger-installation-perth/        301
 /evaporative-air-conditioning-perth-lp         /evaporative-air-conditioning-perth/   301
