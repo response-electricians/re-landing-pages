@@ -1,0 +1,18 @@
+name: Claims check
+
+# Fails a PR if any banned marketing claim or confidential figure appears in the
+# HTML we deploy. See scripts/check-claims.sh for the phrase list and rationale.
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  claims-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run banned-phrases check
+        run: |
+          chmod +x scripts/check-claims.sh
+          ./scripts/check-claims.sh
