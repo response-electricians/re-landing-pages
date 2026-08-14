@@ -193,7 +193,7 @@
 
   /* Person card grid */
   .team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;max-width:1200px;margin:40px auto 0}
-  .team-grid.supervisors{grid-template-columns:repeat(2,1fr);max-width:820px}
+  .team-grid.supervisors{grid-template-columns:repeat(3,1fr);max-width:1200px}
 
   .person-card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:var(--clay-radius);overflow:hidden;position:relative;box-shadow:var(--clay-shadow);transition:transform .25s ease, box-shadow .25s ease;display:flex;flex-direction:column}
   .person-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--cyan);z-index:2}
@@ -241,6 +241,7 @@
   /* Responsive */
   @media(max-width:960px){
     .team-grid{grid-template-columns:repeat(2,1fr);gap:24px}
+    .team-grid.supervisors{grid-template-columns:repeat(2,1fr)}
     .person-card.feature{flex-direction:column}
     .person-card.feature .photo-wrap{flex:none}
     .person-card.feature .photo-wrap img{min-height:0;aspect-ratio:1/1}
@@ -604,15 +605,15 @@
         </div>
       </article>
 
-      <!-- TODD -->
+      <!-- NATHAN -->
       <article class="person-card">
         <div class="photo-wrap">
-          <img src="images/team/todd-dickinson.jpg" alt="Todd Dickinson, Operations Manager">
+          <img src="images/team/nathan-noble.jpg" alt="Nathan Noble, Operations Manager">
         </div>
         <div class="card-body">
           <div class="role-label">Operations Manager</div>
-          <h3>Todd Dickinson</h3>
-          <p class="bio">Todd has grown his career at Response Electricians from apprentice to Operations Manager, with years on the tools before stepping into leadership. He now drives the strategic direction of the Operations department, combining hands-on trade experience with the operational discipline that keeps complex jobs running on time and to standard.</p>
+          <h3>Nathan Noble</h3>
+          <p class="bio">Nathan brings over 10 years of experience across operations, business systems, and process improvement, moving from customer service leadership into consulting and operations management. As Operations Manager at Response Electricians, Nathan drives the strategic direction of the Operations department, combining systems thinking with the operational discipline that keeps complex jobs running on time and to standard.</p>
         </div>
       </article>
 
@@ -701,6 +702,18 @@
           <span class="supervisor-badge">Supervisor &middot; North of the River</span>
           <h3>Rhys Milburn</h3>
           <p class="bio">Rhys leads our team north of the river. He's the go-to for the trades when a job throws up something unusual, and the one making sure every install is done properly the first time. If you're north of the Swan, Rhys is the supervisor backing the electrician at your place.</p>
+        </div>
+      </article>
+
+      <!-- TODD -->
+      <article class="person-card">
+        <div class="photo-wrap">
+          <img src="images/team/todd-dickinson.jpg" alt="Todd Dickinson, Senior Technician">
+        </div>
+        <div class="card-body">
+          <span class="supervisor-badge">Senior Technician</span>
+          <h3>Todd Dickinson</h3>
+          <p class="bio">Todd has spent years on the tools at Response Electricians, building deep technical expertise across residential and commercial electrical work. As our Senior Technician, resident quoting expert, and Ops Superman, there isn't much on a job Todd can't turn his hand to. A steady set of hands and a calm, methodical approach. Exactly the technician you want backing the electrician working at your property.</p>
         </div>
       </article>
 
